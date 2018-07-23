@@ -1,11 +1,11 @@
 # test-game
 
-After npm install, run npx webpack to bundle files. Open up index.html in dist folder
+After npm install, run npx webpack to bundle files. Open up index.html in dist folder.
 
-#TO DO
+# TODO
 
-object interactions
+* object interactions
 
-#DEV TO DO
+# DEV TO DO
 
-Add dev server
+* Add dev server
