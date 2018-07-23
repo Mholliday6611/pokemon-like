@@ -1,0 +1,34 @@
+{
+	"MonsterList": [
+		{
+			"id": 1,
+			"name": "MoonGho",
+			"type": "WATER",
+			"description": "A small water wisp that journeys from terrain to terrain spreading water energy around",
+			"abilities" : "LEVITATE",
+			"baseStats": {
+				"strength": 10,
+				"defense": 10,
+				"speed": 5,
+				"specialAttack": 3,
+				"specialDefense": 3,
+				"accuracy": 80
+			}
+		},
+		{
+			"id": 2,
+			"name": "Chardo",
+			"type": "FIRE",
+			"description": "A tiny flame beast",
+			"abilities" : "HOT_SKIN",
+			"baseStats": {
+				"strength": 5,
+				"defense": 7,
+				"speed": 8,
+				"specialAttack": 7,
+				"specialDefense": 5,
+				"accuracy": 95
+			}
+		}
+	]
+}
