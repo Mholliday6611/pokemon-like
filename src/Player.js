@@ -83,7 +83,7 @@ class Player {
 				this.velocityX = -this.velocityX
 			
 			}
-			if(this.game.dist(this.x,this.y,elem.x,elem.y) < elem.interactionBoxWidth){
+			if(this.game.dist(this.x,this.y,elem.x,elem.y) < (elem.interactionBoxWidth/2 + 50/2)){
 				if(this.game.keyIsDown(32)){
 					alert(elem.dialogue)
 				}
