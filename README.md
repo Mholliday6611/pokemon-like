@@ -1,6 +1,6 @@
 # test-game
 
-After npm install, run npx webpack to bundle files. Open up index.html in dist folder.
+To start: npm run start:dev
 
 # TODO
 

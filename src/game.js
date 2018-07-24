@@ -5,7 +5,7 @@ let game = function(p) {
 
 	let npcs = []
 
-	 for(let i=0; i<5 ; i++){
+	 for(let i=0; i<3 ; i++){
 	 	npcs.push(new NpcBody("Craig",{x:Math.floor(Math.random() * 1000) ,y:Math.floor(Math.random() * 500)}, p))
 	 }
 
