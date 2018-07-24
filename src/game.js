@@ -13,7 +13,7 @@ let game = function(p) {
 
     p.setup = function(){
 
-      p.createCanvas(1080, 720);
+      p.createCanvas(900, 500);
       p.background(0)
       p.rectMode(p.CENTER)
       p.ellipseMode(p.CENTER)
