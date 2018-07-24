@@ -22,8 +22,9 @@ let game = function(p) {
     p.draw = function() {
       	p.background(0)
       	player.render()
+      
     	player.update(npcs)
-
+      
     	for(let i=0; i< npcs.length; i++){
     		npcs[i].render()
     	}

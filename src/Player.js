@@ -85,7 +85,7 @@ class Player {
 			}
 			if(this.game.dist(this.x,this.y,elem.x,elem.y) < elem.interactionBoxWidth){
 				if(this.game.keyIsDown(32)){
-					prompt(elem.dialogue)
+					alert(elem.dialogue)
 				}
 			}
 		})
