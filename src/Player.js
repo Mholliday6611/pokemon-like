@@ -10,6 +10,8 @@ class Player {
 		this.y = 20;
 		this.acceleration = 1;
 		this.direction = 5
+		
+
 	}
 
 	render(){
@@ -21,7 +23,9 @@ class Player {
 	}
 
 	move(npcs){
+		    
 		if(this.game.keyIsDown(this.game.LEFT_ARROW) && this.x >0){
+			
 			this.x -= (1 * this.acceleration)
 			if(this.acceleration < 5){
 				this.acceleration += .2
@@ -43,6 +47,7 @@ class Player {
 			}
 		}
 		if(this.game.keyIsDown(this.game.DOWN_ARROW) && this.y < this.game.height){
+
 			this.y += (1 * this.acceleration)
 			if(this.acceleration < 5){
 				this.acceleration += .2
