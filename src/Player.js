@@ -16,34 +16,33 @@ class Player {
 		this.game.rect(this.x, this.y, 55, 55);
 	}
 
-	update(){
-		this.move()
+	update(npcs){
+		this.move(npcs)
 	}
 
-	move(){
-		console.log(this)
-		if(this.game.keyIsDown(this.game.LEFT_ARROW)){
+	move(npcs){
+		if(this.game.keyIsDown(this.game.LEFT_ARROW) && this.x >0){
 			this.x -= (1 * this.acceleration)
 			if(this.acceleration < 5){
 				this.acceleration += .2
 				this.direction = 4
 			}
 		}
-		if(this.game.keyIsDown(this.game.RIGHT_ARROW)){
+		if(this.game.keyIsDown(this.game.RIGHT_ARROW) && this.x < this.game.width){
 			this.x += (1 * this.acceleration)
 			if(this.acceleration < 5){
 				this.acceleration += .2
 				this.direction = 6
 			}
 		}
-		if(this.game.keyIsDown(this.game.UP_ARROW)){
+		if(this.game.keyIsDown(this.game.UP_ARROW) && this.y > 0){
 			this.y -= (1 * this.acceleration)
 			if(this.acceleration < 5){
 				this.acceleration += .2
 				this.direction = 8
 			}
 		}
-		if(this.game.keyIsDown(this.game.DOWN_ARROW)){
+		if(this.game.keyIsDown(this.game.DOWN_ARROW) && this.y < this.game.height){
 			this.y += (1 * this.acceleration)
 			if(this.acceleration < 5){
 				this.acceleration += .2
