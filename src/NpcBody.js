@@ -5,6 +5,8 @@ class NpcBody {
 
 		this.x = startPos.x
 		this.y = startPos.y
+		this.width = 50
+		this.height = 50
 		this.interactionBoxWidth = 90
 		this.interactionBoxHeight =90
 		this.location = {x:this.x, y:this.y}
@@ -15,7 +17,7 @@ class NpcBody {
 
 		this.game.push()
 		this.game.fill(122,331,331)
-		this.game.rect(this.x, this.y, 55, 55);
+		this.game.rect(this.x, this.y, this.width, this.height);
 		this.game.pop()
 		//interaction box 
 		this.game.push()

@@ -6,14 +6,14 @@ let game = function(p) {
 	let npcs = []
 
 	 for(let i=0; i<3 ; i++){
-	 	npcs.push(new NpcBody("Craig",{x:Math.floor(Math.random() * 1000) ,y:Math.floor(Math.random() * 500)}, p))
+	 	npcs.push(new NpcBody("Craig",{x:Math.floor(Math.random() * 300) ,y:Math.floor(Math.random() * 500)}, p))
 	 }
 
 	let player = new Player("Malcolm",p)
 
     p.setup = function(){
 
-      p.createCanvas(900, 500);
+      p.createCanvas(500, 500);
       p.background(0)
       p.rectMode(p.CENTER)
       p.ellipseMode(p.CENTER)
